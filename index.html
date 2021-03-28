@@ -4,51 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script language="JavaScript" src="script.js"></script>
     <link rel="stylesheet" href="../Calculadora/style.css">
     <title>Calculadora</title>
 </head>
 <body>
     <div class="fundo">
         <h1>Manuh Oliveira</h1>
-        <form action="" name="calc">
-            <div id="calculadora">
-                <h1>Calculadora</h1>
-                <input type="text" id="result">
-                <div id="primeira-linha">
-                    <input type="button" value="C" class="botao" onclick="reset()">
-                    <input type="button" value="/" class="botao" onclick="botao(value)">
-                    <input type="button" value="r" class="botao" onclick="raiz()">
-                    <input type="button" value="*" class="botao" onclick="botao(value)">
-                </div>
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p id="result">resultado</p>
+            <table>
+                <tr>
+                    <td><button class="botao">C</button></td>
+                    <td><button class="botao"><</button></td>
+                    <td><button class="botao">/</button></td>
+                    <td><button class="botao">r</button></td>
+                </tr>
 
-                <div id="segunda-linha">
-                    <input type="button" value="7" class="botao" onclick="botao(value)"> 
-                    <input type="button" value="8" class="botao" onclick="botao(value)">
-                    <input type="button" value="9" class="botao" onclick="botao(value)">
-                    <input type="button" value="+" class="botao" onclick="botao(value)">  
-                </div>
+                <tr>
+                    <td><button class="botao">7</button></td>
+                    <td><button class="botao">8</button></td>
+                    <td><button class="botao">9</button></td>
+                    <td><button class="botao">x</button></td>
+                </tr>
 
-                <div id="terceira-linha">
-                    <input type="button" value="4" class="botao" onclick="botao(value)"> 
-                    <input type="button" value="5" class="botao" onclick="botao(value)"> 
-                    <input type="button" value="6" class="botao" onclick="botao(value)"> 
-                    <input type="button" value="-" class="botao" onclick="botao(value)"> 
-                </div>
+                <tr>
+                    <td><button class="botao">4</button></td>
+                    <td><button class="botao">5</button></td>
+                    <td><button class="botao">6</button></td>
+                    <td><button class="botao">-</button></td>
+                </tr>
 
-                <div id="quarta-linha">
-                    <input type="button" value="1" class="botao" onclick="botao(value)"> 
-                    <input type="button" value="2" class="botao" onclick="botao(value)"> 
-                    <input type="button" value="3" class="botao" onclick="botao(value)"> 
-                    <input type="button" value="." class="botao" onclick="botao(value)">   
-                </div>
-
-                <div id="quinta-linha">
-                    <input type="button" value="0" class="botao tam" onclick="botao(value)">
-                    <input type="button" value="=" class="botao tam" onclick="calcula()"> 
-                </div>
-            </div> 
-        </form> 
+                <tr>
+                    <td><button class="botao">1</button></td>
+                    <td><button class="botao">2</button></td>
+                    <td><button class="botao">3</button></td>
+                    <td><button class="botao">+</button></td>
+                </tr>
+        
+                <tr>
+                    <td colspan="2"><button class="botao tam">0</button></td>
+                    <td><button class="botao">.</button></td>
+                    <td><button class="botao">=</button></td>
+                </tr>
+            </table>
+        </div>  
     </div>
 </body>
 </html>
